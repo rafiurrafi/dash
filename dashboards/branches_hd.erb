@@ -1,0 +1,34 @@
+<% content_for(:title) { "CGAT Dashboard" } %>
+
+<div class="gridster highcontrast">
+  <h1 class="header">CGAT Dashboard - Software development</h1>
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div 
+        data-id="travis_master" 
+        data-view="NestedList"
+        data-title="Travis build status of master branch">
+      </div>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="4" data-sizey="4">
+      <div 
+        data-id="jenkins" 
+        data-view="Iframe"
+        data-src="https://ci.imm.ox.ac.uk/view/CGAT%20Build%20Wall/"
+      </div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
+      <div 
+        data-id="travis_branches" 
+        data-view="NestedList"
+        data-title="Travis build status of all branches"
+	data-moreinfo="Branches active in the last 60 days"
+      </div>
+    </li>
+
+  </ul>
+</div>
+
